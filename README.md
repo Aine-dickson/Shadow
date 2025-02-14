@@ -1,6 +1,6 @@
 # Shadow
 
-A feature-rich, WhatsApp Web-inspired chat application built with **Rust** (backend) and **Vue** (web frontend). This project goes beyond traditional messaging, introducing unique features like ghost messaging, stealth mode, and scheduled messages. It showcases a blend of real-time communication, security, and user-centric design.
+A feature-rich, WhatsApp-inspired chat application built with **Rust** (backend) and **Vue** (web frontend). This project goes beyond traditional messaging, introducing unique features like ghost messaging, stealth mode, and scheduled messages. It showcases a blend of real-time communication, security, privacy and user-centric design.
 
 ---
 
@@ -11,6 +11,10 @@ A feature-rich, WhatsApp Web-inspired chat application built with **Rust** (back
   - Secure login via QR code or email/password.
   - Session management with multi-device support.
 
+- **End to End encryption**
+  - Messages and every kind of media shared over **Shadow**
+  - On device key generation (public and private)
+
 - **Real-Time Messaging**
   - One-to-one and group chats with WebSocket support.
   - Message statuses: Sent, Delivered, Read.
@@ -18,6 +22,14 @@ A feature-rich, WhatsApp Web-inspired chat application built with **Rust** (back
 - **Multimedia Sharing**
   - Send/receive images, videos, voice notes, and documents.
   - Drag-and-drop file upload.
+ 
+- **Calls**
+  - Group and private calls for non ghost chats
+  - Merge private calls to conference calls
+
+- **Status updates**
+  - Share stories to all contacts or selected ones
+  - Set status expiry to not more than 24hr
 
 - **Search and Filters**
   - Search messages and chats.
@@ -28,14 +40,21 @@ A feature-rich, WhatsApp Web-inspired chat application built with **Rust** (back
   - Articles can stay forever until writer suspends it
 
 ### Fancy Features
-- **Ghost Messaging**: Send messages to anonymous like-minded people anonymously. Chats ghost chats dissapear when app is closed/logged out
+- **Ghost Messaging**: Send messages to anonymous like-minded people anonymously. Ghost chats dissapear when app is closed/logged out or at a defined initiator time
 - **Scheduled Messaging**: Schedule messages to be sent at a later time once or at an interval.
-- **Stealth Mode**: Browse chats without updating "last seen" or "read receipts."
+- **Stealth Mode**: Browse chats, status updates without updating "last seen" or "read receipts" or "views" on status
+- **Rewind && fast forward on status**: Gain more control on status update viewing. Rewind, pause or fast forward media
+- **Extra privace on status**: Choose who can see your status, whether viewers can screenshot/record your status updates
+- **Scheduled statuses**: Choose when to update a given status allowing send before
+- **Custom status expiration**: Set after how long the status update expires, a duration not more than 24hrs
+- **No capture mode**: Determine whether your status updates, or profile photo or chats can be screenshot or recorded
 - **Message Recall**: Unsend messages within a specific time frame when unread.
+- **Selective message visibility**: Choose who can see a message sent to a group chat
 - **Auto-Reply**: Configure automated responses for when you're unavailable.
 - **Advanced Analytics**: Visualize messaging habits and trends.
 - **Chat Themes**: Customize chat backgrounds, text colors, and fonts.
 - **Multi-Language Support**: Translate messages on the fly.
+- **Call merging**: Support for merging more than one private calls to a conference call
 - **Collaborative Groups**: Shared to-do lists, polls, and file storage.
 
 ---
@@ -43,13 +62,17 @@ A feature-rich, WhatsApp Web-inspired chat application built with **Rust** (back
 ## Roadmap
 - [ ] Authentication and registration implementation
 - [ ] Text message chatting implementation
-- [ ] Implement Ghost messaging feature
+- [ ] Articles feature implementation
+- [ ] Status updates feature engineering
 - [ ] Include Video and voice calls
+- [ ] Implement Ghost messaging feature
 - [ ] Implement stealth mode
-- [ ] Implement advanced analytics for visaualization
-- [ ] Implement app automations, i.e auto-reply, message recall, language translation, scheduling
+- [ ] Implement app automations, i.e auto-reply, message recall, scheduling
+- [ ] Settings implementation
+- [ ] Implement not capture mode
+- [ ] Translation feature
 - [ ] Enhance group collaboration features with task management.
-- [ ] Chat theme configuration settings
+- [ ] Implement advanced analytics for visaualization
 
 ## Tech Stack
 
