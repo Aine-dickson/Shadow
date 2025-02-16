@@ -1,0 +1,25 @@
+# Ignore Cargo build and dependency files
+/system/target/
+system/Cargo.lock
+system/Cargo.toml.orig
+
+# Ignore IDE and editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore Rust build files
+/system/target/
+# Test and bench results
+/system/tests/
+/system/benches/
+
+# Ignore documentation files
+/system/docs/
+
+# Ignore other typical Rust files
+**/*.rs.bk
+
+# Ignore .git directory for Git repo metadata
+.git/

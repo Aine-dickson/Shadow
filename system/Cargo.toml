@@ -1,0 +1,19 @@
+[package]
+name = "system"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = {version="0.8.1", features=["macros"]}
+bcrypt = "0.17.0"
+chrono = "0.4.39"
+dotenvy = "0.15.7"
+jsonwebtoken = "9.3.1"
+mongodb = "3.2.1"
+serde = "1.0.217"
+serde_json = "1.0.138"
+tokio = {version="1.43.0", features=["macros", "rt-multi-thread"]}
+tower-cookies = "0.11.0"
+tower-http = {version="0.6.2", features=["cors"]}
+uuid = {version="1.13.1", features=["v4"]}
+validator = {version="0.20.0", features=["derive"]}
